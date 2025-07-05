@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: uniqr-chatbot
+    runtime: php
+    plan: free
+    buildCommand: ""
+    startCommand: ""
+    envVars:
+      - key: PHP_DISPLAY_ERRORS
+        value: off
+    autoDeploy: false
