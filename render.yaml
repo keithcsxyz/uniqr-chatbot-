@@ -1,11 +1,9 @@
 services:
   - type: web
     name: uniqr-chatbot
-    runtime: php
+    runtime: docker
+    repo: https://github.com/YOUR_USERNAME/uniqr-chatbot
     plan: free
-    buildCommand: ""
-    startCommand: ""
-    envVars:
-      - key: PHP_DISPLAY_ERRORS
-        value: off
-    autoDeploy: false
+    dockerfilePath: Dockerfile
+    branch: main
+    autoDeploy: true
